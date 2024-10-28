@@ -2,6 +2,18 @@
 def sort_num(entries):
     range_one, range_two, range_three, range_four, range_five = None
 
+    for num in entries:
+        if num >= 1 and num <= 10:
+            range_one.append(num)
+        elif num >= 11 and num <= 20:
+            range_two.append(num)
+        elif num >= 21 and num <= 30:
+            range_three.append(num)
+        elif num >= 31 and num <= 40:
+            range_four.append(num)
+        elif num >= 41 and num <= 50:
+            range_five.append(num)
+
 # Array to store all entries
 entries = []
 
