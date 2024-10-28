@@ -1,3 +1,7 @@
+# Method for segregating number entries
+def sort_num(entries):
+    range_one, range_two, range_three, range_four, range_five = None
+
 # Array to store all entries
 entries = []
 
