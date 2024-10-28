@@ -14,6 +14,14 @@ def sort_num(entries):
         elif num >= 41 and num <= 50:
             range_five.append(num)
 
+    print(f"1 - 10: {len(range_one)}")
+    print(f"11 - 20: {len(range_two)}")
+    print(f"21 - 30: {len(range_three)}")
+    print(f"31 - 40: {len(range_four)}")
+    print(f"41 - 50: {len(range_five)}")
+
+    return range_one, range_two, range_three, range_four, range_five
+
 # Array to store all entries
 entries = []
 
