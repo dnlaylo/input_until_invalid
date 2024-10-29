@@ -1,6 +1,6 @@
 # Method for segregating number entries
 def sort_num(entries):
-    range_one, range_two, range_three, range_four, range_five = None
+    range_one, range_two, range_three, range_four, range_five = [], [], [], [], []
 
     for num in entries:
         if num >= 1 and num <= 10:
@@ -34,6 +34,7 @@ while True:
         # If statement for checking input
         if entry < 1 or entry > 50:
             print("Input is not valid.\n")
+            print("COUNT OF INPUTTED NUMBERS:")
             break
 
         # If valid, proceed to storing in the array
@@ -41,5 +42,8 @@ while True:
 
     except:
         print("Input is not valid. Integers only.\n")
+        print("COUNT OF INPUTTED NUMBERS:")
+        break
 
 # If input is invalid, display count of all valid inputs within its number group/range
+sort_num(entries)
